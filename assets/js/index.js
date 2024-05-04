@@ -7,3 +7,8 @@ const c = 10;
 const d = 2;
 const division = c / d;
 console.log('Ділення:', division);
+
+const e = 124;
+const f = 125;
+const addition = e + f;
+console.log('Додавання:', addition);
