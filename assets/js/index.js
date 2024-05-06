@@ -39,5 +39,12 @@ const bigNumber = '100';
 
 // 3
 
-const minute = +prompt('Введіть кількість хвилин:')
-console.log(minute * 60, 'секунд');
+// const minute = +prompt('Введіть кількість хвилин:')
+// console.log(minute * 60, 'секунд');
+
+// 4
+const greeting = 'Hello,';
+const username = prompt('Ведіть ваше імя');
+document.write('<p>' 
+    + greeting + ' ' + username+'!' + 
+'</p>')
