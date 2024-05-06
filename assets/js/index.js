@@ -32,3 +32,9 @@ console.log(number, choice, promLanguage, bigNumber);
 // 1
 const number1 = prompt('Input number:')
 console.log(number1**2);
+
+// 2
+const number2 = +prompt('Input first number:');
+const number3 = +prompt('Input second number:');
+console.log((number2 + number3) / 2);
+
