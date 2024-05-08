@@ -1,30 +1,51 @@
 // Завдання на змінні:
 
 // 1
-const a = 5;
-const b = 10;
-const multiplication = a * b;
+// const a = 5;
+// const b = 10;
+// const multiplication = a * b;
 // console.log('Множення:', multiplication);
 
 // 2
-const c = 10;
-const d = 2;
-const division = c / d;
+// const c = 10;
+// const d = 2;
+// const division = c / d;
 // console.log('Ділення:', division);
 
 // 3
-const e = 124;
-const f = 125;
-const addition = e + f;
+// const e = 124;
+// const f = 125;
+// const addition = e + f;
 // console.log('Додавання:', addition);
 
 // 4
-const number = 11;
-const choice = true;
-const promLanguage = 'java script';
-const bigNumber = '100';
+// const number = 11;
+// const choice = true;
+// const promLanguage = 'java script';
+// const bigNumber = '100';
 // console.log(number, choice, promLanguage, bigNumber);
 
+
+// 5
+
+let num = 1;
+// num += 11;
+// alert(num);
+
+// num -= 11;
+// alert(num);
+
+// num *= 11;
+// alert(num);
+
+// num /= 11;
+// alert(num);
+
+// num += 1;
+// alert(num);
+
+// num--;
+// alert(num);
 
 // Завдання на введення/виведення
 
@@ -43,8 +64,8 @@ const bigNumber = '100';
 // console.log(minute * 60, 'секунд');
 
 // 4
-const greeting = 'Hello,';
-const username = prompt('Ведіть ваше імя');
-document.write('<p>' 
-    + greeting + ' ' + username+'!' + 
-'</p>')
+// const greeting = 'Hello,';
+// const username = prompt('Ведіть ваше імя');
+// document.write('<p>' 
+//     + greeting + ' ' + username+'!' + 
+// '</p>')
