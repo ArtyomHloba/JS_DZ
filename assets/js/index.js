@@ -50,7 +50,7 @@ let num = 1;
 // Завдання на введення/виведення
 
 // 1
-// const number1 = prompt('Input number:')
+// const number1 = +prompt('Input number:')
 // console.log(number1**2);
 
 // 2
