@@ -1,71 +1,32 @@
-// Завдання на змінні:
-
-// 1
-// const a = 5;
-// const b = 10;
-// const multiplication = a * b;
-// console.log('Множення:', multiplication);
-
-// 2
-// const c = 10;
-// const d = 2;
-// const division = c / d;
-// console.log('Ділення:', division);
-
-// 3
-// const e = 124;
-// const f = 125;
-// const addition = e + f;
-// console.log('Додавання:', addition);
-
-// 4
-// const number = 11;
-// const choice = true;
-// const promLanguage = 'java script';
-// const bigNumber = '100';
-// console.log(number, choice, promLanguage, bigNumber);
+// Умовні оператори
 
 
-// 5
+//1
+// const isDay = true;
 
-let num = 1;
-// num += 11;
-// alert(num);
+// if (isDay){
+//     document.write(`Зараз вітла тема`);
+// } else {
+//     document.write(`Зараз темна тема`);
+// }
 
-// num -= 11;
-// alert(num);
+//2
+// const isOnline = false ? console.log(`Онлайн`) : console.log(`Ваше повідомлення буде відправлено при під'єднанні до мережі Інтернет`);
 
-// num *= 11;
-// alert(num);
+//3
 
-// num /= 11;
-// alert(num);
+// const sumOfProduct = +prompt('Ведіть суму покупки');
+// const sale1 = 0.03;
+// const sale2 = 0.05;
 
-// num += 1;
-// alert(num);
+// let sum;
 
-// num--;
-// alert(num);
+// if (sumOfProduct >= 800){
+//     console.log(`Ваша знижка 5% до сплати:${sumOfProduct * (1 -sale2)}`);
+// } else if (sumOfProduct >= 500){
+//     console.log(`Ваша знижка 3%, до слплати:${sumOfProduct * (1 -sale1)}`);
+// } else{
+//     console.log(`Вам не надається знижка(`)
+// }
 
-// Завдання на введення/виведення
 
-// 1
-// const number1 = +prompt('Input number:')
-// console.log(number1**2);
-
-// 2
-// const number2 = +prompt('Input first number:');
-// const number3 = +prompt('Input second number:');
-// console.log((number2 + number3) / 2);
-
-// 3
-
-// const minute = +prompt('Введіть кількість хвилин:')
-// console.log(minute * 60, 'секунд');
-
-// 4
-// const greeting = 'Hello,';
-// const username = prompt('Ведіть ваше імя');
-// document.write('<p>' 
-//     + greeting + ' ' + username+'!' + 
-// '</p>')
