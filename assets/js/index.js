@@ -1,13 +1,13 @@
 // Умовні оператори
 
-
 //1
-// const isDay = true;
+// const isDay = false;
 
 // if (isDay){
-//     document.write(`Зараз вітла тема`);
+//     document.write(`Зараз світла тема`);
 // } else {
-//     document.write(`Зараз темна тема`);
+//     document.write(`<body style="background-color: black;">
+//     <p style="color: white;">Зараз темна тема</p></body>`);
 // }
 
 //2
@@ -29,4 +29,69 @@
 //     console.log(`Вам не надається знижка(`)
 // }
 
+// switch..case
 
+// const firtsNumber = +prompt('Введіть перше число:')
+// const secondNumber = +prompt('Введіть друге число:')
+// const operation = prompt(`Введіть операцію:`)
+
+// switch (operation){
+//     case '+':
+//     console.log(`${firtsNumber + secondNumber}`);
+//     break;
+//     case '-':
+//     console.log(`${firtsNumber - secondNumber}`);
+//     break;
+//     case '*':
+//     console.log(`${firtsNumber * secondNumber}`);
+//     break;
+//     case '/':
+//     console.log(`${firtsNumber / secondNumber}`);
+//     break;
+//     default:
+//         console.log(`Некоректний ввід`)
+// }
+
+// 1
+// const day = prompt(`Введіть номер дня тижня:`);
+
+// switch(day) {
+//     case '1':
+//         console.log(`Понеділок`);
+//         break;
+//     case '2':
+//         console.log(`Вівторок`);
+//         break;
+//     case '3':
+//         console.log(`Середа`);
+//         break;
+//     case '4':
+//         console.log(`Четвер`);
+//         break;
+//     case '5':
+//         console.log(`П'ятниця`);
+//         break;
+//     case '6':
+//         console.log(`Субота`);
+//         break;
+//     case '7':
+//         console.log(`Неділя`);
+//         break;
+//     default:
+//         console.log(`Дня з таким номером не існує`);
+// }
+
+
+// 2
+
+// let day = prompt(`Ведіть число для розрахунку декати:`)
+
+// if (day === 1 || day <= 19){
+//     console.log(`Перша деката`)
+// } else if(day === 20 || day <= 24){
+//     console.log(`Друга деката`)
+// } else if (day === 25 || day <= 31){
+//     console.log(`Третя деката`)
+// } else{
+//     console.log(`Помилка вводу`)
+// }
