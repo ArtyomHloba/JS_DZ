@@ -95,3 +95,37 @@
 // } else{
 //     console.log(`Помилка вводу`)
 // }
+
+// Цикли
+
+// 1. Вивести числа від 25 до 0 (порядок зменшення).
+
+// let firtsNumber = 25;
+// let endNumber = 0;
+
+// while(firtsNumber >= endNumber){
+//     console.log(firtsNumber);
+//     firtsNumber--;
+// }
+
+// Вивести числа від 10 до 50, які кратні 5.
+
+// let firtsNumber = 10;
+// const endNumber = 50;
+
+// while (firtsNumber <= endNumber){
+//     console.log(firtsNumber);
+//     firtsNumber += 5; 
+// }
+
+// *Знайти суму чисел в межах від 1 до 100.
+
+// let firtsNumber = 1;
+// const endNumber = 100;
+
+// let sum = 0;
+
+// for ( let i = firtsNumber; i <=endNumber; i++){
+//     sum = sum + i;
+// }
+// console.log(sum)
