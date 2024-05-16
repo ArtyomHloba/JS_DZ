@@ -11,7 +11,13 @@
 // }
 
 //2
-// const isOnline = false ? console.log(`Онлайн`) : console.log(`Ваше повідомлення буде відправлено при під'єднанні до мережі Інтернет`);
+// const isOnline = false 
+
+// if (isOnline){
+//     console.log(`Онлайн`);
+// } else {
+//     console.log(`Ваше повідомлення буде відправлено при під'єднанні до мережі Інтернет`);
+// }
 
 //3
 
@@ -26,7 +32,7 @@
 // } else if (sumOfProduct >= 500){
 //     console.log(`Ваша знижка 3%, до слплати:${sumOfProduct * (1 -sale1)}`);
 // } else{
-//     console.log(`Вам не надається знижка(`)
+//     console.log(sumOfProduct);
 // }
 
 // switch..case
@@ -86,11 +92,11 @@
 
 // let day = prompt(`Ведіть число для розрахунку декати:`)
 
-// if (day === 1 || day <= 19){
+// if (day === 1 || day <= 10){
 //     console.log(`Перша деката`)
-// } else if(day === 20 || day <= 24){
+// } else if(day === 11 || day <= 20){
 //     console.log(`Друга деката`)
-// } else if (day === 25 || day <= 31){
+// } else if (day === 21 || day <= 31){
 //     console.log(`Третя деката`)
 // } else{
 //     console.log(`Помилка вводу`)
