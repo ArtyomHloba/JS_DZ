@@ -27,10 +27,10 @@
 
 // let sum;
 
-// if (sumOfProduct >= 800){
+// if (sumOfProduct > 800){
 //     console.log(`Ваша знижка 5% до сплати:${sumOfProduct * (1 -sale2)}`);
-// } else if (sumOfProduct >= 500){
-//     console.log(`Ваша знижка 3%, до слплати:${sumOfProduct * (1 -sale1)}`);
+// } else if (sumOfProduct > 500){
+//     console.log(`Ваша знижка 3%, до сплати:${sumOfProduct * (1 -sale1)}`);
 // } else{
 //     console.log(sumOfProduct);
 // }
@@ -92,11 +92,11 @@
 
 // let day = prompt(`Ведіть число для розрахунку декати:`)
 
-// if (day === 1 || day <= 10){
+// if (day >= 1 && day <= 10){
 //     console.log(`Перша деката`)
-// } else if(day === 11 || day <= 20){
+// } else if(day >= 11 && day <= 20){
 //     console.log(`Друга деката`)
-// } else if (day === 21 || day <= 31){
+// } else if (day >= 21 && day <= 31){
 //     console.log(`Третя деката`)
 // } else{
 //     console.log(`Помилка вводу`)
