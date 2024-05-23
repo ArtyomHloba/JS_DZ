@@ -1,137 +1,142 @@
-// Умовні оператори
+// 1) Реалізувати функцію isWorkingAgePerson, яка буде перевіряти, чи працездатного людина віку (наприклад, від 16 до 64).
+// Функція приймає в якості параметра вік людини і повертає значення булевого типу.
 
-//1
-// const isDay = false;
+function isWorkingAgePerson(age) {
+    age = +prompt("Ведіть ім'я");
+    if (age >= 16 && age <= 64){
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(isWorkingAgePerson());
 
-// if (isDay){
-//     document.write(`Зараз світла тема`);
-// } else {
-//     document.write(`<body style="background-color: black;">
-//     <p style="color: white;">Зараз темна тема</p></body>`);
-// }
+// 2) Реалізувати функцію checkMultiplicity, 
+// яка приймає два числа і перевіряє, чи ділиться перше на друге націло (без залишку):
 
-//2
-// const isOnline = false 
+function checkMultiplicity(firstNumber, secondNumber){
+    firstNumber = +prompt("Ведіть перше чісло");
+    secondNumber = +prompt("Ведіть друге число");
+    if (firstNumber % secondNumber){
+        return false;
+    } else {
+        return true;
+    } 
+}
+console.log(checkMultiplicity());
 
-// if (isOnline){
-//     console.log(`Онлайн`);
-// } else {
-//     console.log(`Ваше повідомлення буде відправлено при під'єднанні до мережі Інтернет`);
-// }
-
-//3
-
-// const sumOfProduct = +prompt('Ведіть суму покупки');
-// const sale1 = 0.03;
-// const sale2 = 0.05;
-
-// let sum;
-
-// if (sumOfProduct > 800){
-//     console.log(`Ваша знижка 5% до сплати:${sumOfProduct * (1 -sale2)}`);
-// } else if (sumOfProduct > 500){
-//     console.log(`Ваша знижка 3%, до сплати:${sumOfProduct * (1 -sale1)}`);
-// } else{
-//     console.log(sumOfProduct);
-// }
-
-// switch..case
-
-// const firtsNumber = +prompt('Введіть перше число:')
-// const secondNumber = +prompt('Введіть друге число:')
-// const operation = prompt(`Введіть операцію:`)
-
-// switch (operation){
-//     case '+':
-//     console.log(`${firtsNumber + secondNumber}`);
-//     break;
-//     case '-':
-//     console.log(`${firtsNumber - secondNumber}`);
-//     break;
-//     case '*':
-//     console.log(`${firtsNumber * secondNumber}`);
-//     break;
-//     case '/':
-//     console.log(`${firtsNumber / secondNumber}`);
-//     break;
-//     default:
-//         console.log(`Некоректний ввід`)
-// }
-
-// 1
-// const day = prompt(`Введіть номер дня тижня:`);
-
-// switch(day) {
-//     case '1':
-//         console.log(`Понеділок`);
-//         break;
-//     case '2':
-//         console.log(`Вівторок`);
-//         break;
-//     case '3':
-//         console.log(`Середа`);
-//         break;
-//     case '4':
-//         console.log(`Четвер`);
-//         break;
-//     case '5':
-//         console.log(`П'ятниця`);
-//         break;
-//     case '6':
-//         console.log(`Субота`);
-//         break;
-//     case '7':
-//         console.log(`Неділя`);
-//         break;
-//     default:
-//         console.log(`Дня з таким номером не існує`);
-// }
+// 3) Перевірка можливості існування трикутника.
+// Реалізувати функцію, яка приймає довжини трикутника; 
+// функція повертає true, якщо трикутник можливий, і false, якщо ні (див. умови існування трикутника,
 
 
-// 2
+function isTriangle(a, b, c){
+    a = +prompt("Ведіть розмір сторони а")
+    b = +prompt("Ведіть розмір сторони b")
+    c = +prompt("Ведіть розмір сторони c")
+    if(a + b > c && a + c > b && b + c > a){
+        return true;
+    }else{
+        return false;
+    }
+}
 
-// let day = prompt(`Ведіть число для розрахунку декати:`)
+console.log(isTriangle());
 
-// if (day >= 1 && day <= 10){
-//     console.log(`Перша деката`)
-// } else if(day >= 11 && day <= 20){
-//     console.log(`Друга деката`)
-// } else if (day >= 21 && day <= 31){
-//     console.log(`Третя деката`)
-// } else{
-//     console.log(`Помилка вводу`)
-// }
+// 4) Реалізувати функції розрахунку площі (або поверхні) наступної фігури (тіла): трикутника, прямокутника (або конуса, паралелепіпеда) в залежності від переданих розмірів фігури. 
+// Функція повинна повернути обчислене значення. Мінімум для однієї фігури на вибір.
 
-// Цикли
+function triangleArea(base, height) {
+    return (base * height)/2;
+}
+console.log(triangleArea(3, 4));
 
-// 1. Вивести числа від 25 до 0 (порядок зменшення).
+function squareArea (sides){
+    return sides * 2;
+}
+console.log(squareArea(2));
 
-// let firtsNumber = 25;
-// let endNumber = 0;
+function rectangleArea(length, width){
+    return length * width;
+}
+console.log(rectangleArea(2, 5));
 
-// while(firtsNumber >= endNumber){
-//     console.log(firtsNumber);
-//     firtsNumber--;
-// }
+// 1. Створити об'єкт customer, що містить такі властивості:
 
-// Вивести числа від 10 до 50, які кратні 5.
+const customer = {
+    name: "Артем",
+    surname: "Глоба",
+    email: "artem@gmail.com",
+    passw: "qwerty123",
+    phoneNum: "077-777-77-77",
+    address: {
+        city: "Запоріжжя",
+        street: "Шевченка",
+        house: "10",
+        room: "25",
+    },
+    getAddress: function(){
+        return `${this.address.city}, ${this.address.street}, дім ${this.address.house}, квартира ${this.address.room}`;
+    },
+    newPhone: function(newPhonenumber){
+        this.phoneNum = newPhonenumber;
+    }
+};
 
-// let firtsNumber = 10;
-// const endNumber = 50;
+console.log(customer);
 
-// while (firtsNumber <= endNumber){
-//     console.log(firtsNumber);
-//     firtsNumber += 5; 
-// }
+const getAddress = customer.getAddress();
+console.log(getAddress);
 
-// *Знайти суму чисел в межах від 1 до 100.
+customer.newPhone("055-444-22-33");
+console.log(customer.phoneNum);
 
-// let firtsNumber = 1;
-// const endNumber = 100;
 
-// let sum = 0;
+customer.isMale = true;
+delete customer.address;
 
-// for ( let i = firtsNumber; i <=endNumber; i++){
-//     sum = sum + i;
-// }
-// console.log(sum)
+
+//1 Копія
+const customerCopy1 = Object.assign({}, customer);
+console.log(customerCopy1 === customer);
+//2 Копія
+const customerCopy2 = { ...customer };
+console.log(customerCopy2 === customer);
+
+
+// 2. Перебрати і вивести властивості об'єкту cat
+const cat = {
+    name: "Murka",
+    color: "Black",
+    isMale: false,
+    isFurnitureDemage: true,
+}
+for (const key in cat) {
+    console.log(key, cat[key]);
+}
+
+
+// 3. Створити функцію-конструктор для створення об'єктів книг з властивостями:
+
+// автор, 
+// назва, 
+// рік видання, 
+// видавництво (рядок або *об'єкт з властивостями місто, назва), 
+// ціна.
+
+function Books(author, title, year, publisherName, publisherCity, price) {
+    this.author = author;
+    this.title = title;
+    this.year = year;
+    this.publisher = { 
+        name: publisherName, 
+        city: publisherCity 
+    };
+    this.price = price;
+};
+
+const book = new Books("Jane Doe", "Diary of Jane", 1940, "Test Publisher", "Manchester", 120); 
+
+console.log(book);
+
+
