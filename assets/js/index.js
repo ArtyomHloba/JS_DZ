@@ -2,28 +2,17 @@
 // Функція приймає в якості параметра вік людини і повертає значення булевого типу.
 
 function isWorkingAgePerson(age) {
-    age = +prompt("Ведіть ім'я");
-    if (age >= 16 && age <= 64){
-        return true;
-    } else {
-        return false;
-    }
+    return age >= 16 && age <= 64 
 }
-console.log(isWorkingAgePerson());
+console.log(isWorkingAgePerson(+prompt("Ведіть ваш вік")));
 
 // 2) Реалізувати функцію checkMultiplicity, 
 // яка приймає два числа і перевіряє, чи ділиться перше на друге націло (без залишку):
 
 function checkMultiplicity(firstNumber, secondNumber){
-    firstNumber = +prompt("Ведіть перше чісло");
-    secondNumber = +prompt("Ведіть друге число");
-    if (firstNumber % secondNumber){
-        return false;
-    } else {
-        return true;
-    } 
+    return (firstNumber % secondNumber) === 0;
 }
-console.log(checkMultiplicity());
+console.log(checkMultiplicity(+prompt("Введіть перше число"), +prompt("Введіть друге число")));
 
 // 3) Перевірка можливості існування трикутника.
 // Реалізувати функцію, яка приймає довжини трикутника; 
@@ -31,17 +20,9 @@ console.log(checkMultiplicity());
 
 
 function isTriangle(a, b, c){
-    a = +prompt("Ведіть розмір сторони а")
-    b = +prompt("Ведіть розмір сторони b")
-    c = +prompt("Ведіть розмір сторони c")
-    if(a + b > c && a + c > b && b + c > a){
-        return true;
-    }else{
-        return false;
-    }
+    return a + b > c && a + c > b && b + c > a;
 }
-
-console.log(isTriangle());
+console.log(isTriangle(+prompt("Введіть а"), +prompt("Введіть b"), +prompt("Введіть c")));
 
 // 4) Реалізувати функції розрахунку площі (або поверхні) наступної фігури (тіла): трикутника, прямокутника (або конуса, паралелепіпеда) в залежності від переданих розмірів фігури. 
 // Функція повинна повернути обчислене значення. Мінімум для однієї фігури на вибір.
@@ -60,6 +41,14 @@ function rectangleArea(length, width){
     return length * width;
 }
 console.log(rectangleArea(2, 5));
+
+5
+
+function isSimple(a){
+    return (((a % a === 0)&&(a % 2 != 0) && (a % 3 != 0) && (a % 4 != 0) && (a % 5 != 0)) || a ==2 || a === 3|| a == 5);
+}
+
+console.log(isSimple(+prompt("Введіть число для перевірки:")))
 
 // 1. Створити об'єкт customer, що містить такі властивості:
 
