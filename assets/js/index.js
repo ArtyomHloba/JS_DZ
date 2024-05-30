@@ -1,131 +1,195 @@
-// 1) Реалізувати функцію isWorkingAgePerson, яка буде перевіряти, чи працездатного людина віку (наприклад, від 16 до 64).
-// Функція приймає в якості параметра вік людини і повертає значення булевого типу.
+const arr = [1, 3, 5 ,6 , 7, 10];
 
-function isWorkingAgePerson(age) {
-    return age >= 16 && age <= 64 
-}
-console.log(isWorkingAgePerson(+prompt("Ведіть ваш вік")));
+console.log(arr);
 
-// 2) Реалізувати функцію checkMultiplicity, 
-// яка приймає два числа і перевіряє, чи ділиться перше на друге націло (без залишку):
+// 1 Видалити останній
+const deleteLast = arr.pop();
+console.log(deleteLast);
+console.log(arr);
 
-function checkMultiplicity(firstNumber, secondNumber){
-    return (firstNumber % secondNumber) === 0;
-}
-console.log(checkMultiplicity(+prompt("Введіть перше число"), +prompt("Введіть друге число")));
+//1 початковий елемент
+const delFirst = arr.shift();
+console.log(delFirst);
 
-// 3) Перевірка можливості існування трикутника.
-// Реалізувати функцію, яка приймає довжини трикутника; 
-// функція повертає true, якщо трикутник можливий, і false, якщо ні (див. умови існування трикутника,
+//1 додати елемент до початку
+const addFirst = arr.unshift(0);
+console.log(arr);
 
+//1 додати елемент до кінця.
+const addLast = arr.push(22);
+console.log(arr);
 
-function isTriangle(a, b, c){
-    return a + b > c && a + c > b && b + c > a;
-}
-console.log(isTriangle(+prompt("Введіть а"), +prompt("Введіть b"), +prompt("Введіть c")));
+// 2 Вивести розмір масиву.
+const length = arr.length;
+console.log(length);
 
-// 4) Реалізувати функції розрахунку площі (або поверхні) наступної фігури (тіла): трикутника, прямокутника (або конуса, паралелепіпеда) в залежності від переданих розмірів фігури. 
-// Функція повинна повернути обчислене значення. Мінімум для однієї фігури на вибір.
+//3 Зробити копію масиву.
+const arr2 = [...arr];
 
-function triangleArea(base, height) {
-    return (base * height)/2;
-}
-console.log(triangleArea(3, 4));
+// 4 Вивести елементи з парними індексами.
 
-function squareArea (sides){
-    return sides * 2;
-}
-console.log(squareArea(2));
+console.log(arr)
 
-function rectangleArea(length, width){
-    return length * width;
-}
-console.log(rectangleArea(2, 5));
-
-5
-
-function isSimple(a){
-    return (((a % a === 0)&&(a % 2 != 0) && (a % 3 != 0) && (a % 4 != 0) && (a % 5 != 0)) || a ==2 || a === 3|| a == 5);
+for (let i = 0; i <li arr.length; i+=2){
+    console.log(arr[i]);
 }
 
-console.log(isSimple(+prompt("Введіть число для перевірки:")))
+// 5 Знайти добуток елементів масиву. 
 
-// 1. Створити об'єкт customer, що містить такі властивості:
+const arr3 = [1, 2, 5];
 
-const customer = {
-    name: "Артем",
-    surname: "Глоба",
-    email: "artem@gmail.com",
-    passw: "qwerty123",
-    phoneNum: "077-777-77-77",
-    address: {
-        city: "Запоріжжя",
-        street: "Шевченка",
-        house: "10",
-        room: "25",
-    },
-    getAddress: function(){
-        return `${this.address.city}, ${this.address.street}, дім ${this.address.house}, квартира ${this.address.room}`;
-    },
-    newPhone: function(newPhonenumber){
-        this.phoneNum = newPhonenumber;
+function arrayProd (numbers){
+    let prod = 1;
+    for (let i = 0; i < numbers.length; i++){
+     prod *= numbers[i];
     }
-};
-
-console.log(customer);
-
-const getAddress = customer.getAddress();
-console.log(getAddress);
-
-customer.newPhone("055-444-22-33");
-console.log(customer.phoneNum);
-
-
-customer.isMale = true;
-delete customer.address;
-
-
-//1 Копія
-const customerCopy1 = Object.assign({}, customer);
-console.log(customerCopy1 === customer);
-//2 Копія
-const customerCopy2 = { ...customer };
-console.log(customerCopy2 === customer);
-
-
-// 2. Перебрати і вивести властивості об'єкту cat
-const cat = {
-    name: "Murka",
-    color: "Black",
-    isMale: false,
-    isFurnitureDemage: true,
-}
-for (const key in cat) {
-    console.log(key, cat[key]);
+    return prod;
 }
 
+console.log(arrayProd(arr3));
 
-// 3. Створити функцію-конструктор для створення об'єктів книг з властивостями:
+const phones = [
+    {
+        id: 1,
+        brand: "Apple",
+        model: "iPhone 13",
+        color: "Black",
+        price: 799,
+        RAM: "4GB"
+    },
+    {
+        id: 2,
+        brand: "Samsung",
+        model: "Galaxy S21",
+        color: "White",
+        price: 699,
+        RAM: "8GB"
+    },
+    {
+        id: 3,
+        brand: "Google",
+        model: "Pixel 6",
+        color: "Green",
+        price: 599,
+        RAM: "8GB"
+    },
+    {
+        id: 4,
+        brand: "OnePlus",
+        model: "9 Pro",
+        color: "Silver",
+        price: 729,
+        RAM: "12GB"
+    },
+    {
+        id: 5,
+        brand: "Xiaomi",
+        model: "Mi 11",
+        color: "Blue",
+        price: 649,
+        RAM: "8GB"
+    },
+];
 
-// автор, 
-// назва, 
-// рік видання, 
-// видавництво (рядок або *об'єкт з властивостями місто, назва), 
-// ціна.
+document.write(`<div class="container">`);
+document.write(`<ul class="list">`);
 
-function Books(author, title, year, publisherName, publisherCity, price) {
-    this.author = author;
-    this.title = title;
-    this.year = year;
-    this.publisher = { 
-        name: publisherName, 
-        city: publisherCity 
-    };
-    this.price = price;
-};
+for (let i = 0; i < phones.length; i++) {
+    document.write(`
+        <li class="phone-item phone-${i}">
+            <span class="phone-brand">${phones[i].brand}</span>
+            <span class="phone-model">${phones[i].model}</span>
+            <span class="phone-color">${phones[i].color}</span>
+            <span class="phone-price">${phones[i].price}</span>
+            <span class="phone-ram">${phones[i].RAM}</span>
+        </li>
+    `);
+}
 
-const book = new Books("Jane Doe", "Diary of Jane", 1940, "Test Publisher", "Manchester", 120); 
+document.write(`</ul>`);
+document.write(`</div>`);
 
-console.log(book);
+let averagePrice = 0;
+for (let i = 0; i < phones.length; i++){
+    averagePrice += phones[i].price;
+}
+console.log(averagePrice);
+
+// 8
+const array = [0, 2, 0, 5, 6];
+
+const noZero = array.filter(a => a > 0);
+console.log(noZero);
+
+// 9 
+const array2 = [7, 918, 14, 2004, 10];
+
+const del100 = array2.map(d => d / 100);
+console.log(del100);
 
 
+// 10
+array2.forEach(element => {
+    console.log(element ** 3);
+});
+
+//11
+let index = array2.findIndex(element => element * element === 100);
+
+if (index !== -1) {
+    array2.splice(index, 1);
+    console.log(`Елемент видалено. Оновлений масив: ${array2}`);
+} else {
+    console.log("Елементу, квадрат якого дорівнює 100, не існує в масиві.");
+}
+
+//12
+const simpleNum = array2.some(el => el % 2 === 0);
+console.log(simpleNum);
+
+// 13
+const minusNum = array2.some(m => m < 0);
+console.log(minusNum);
+
+function User(name, surname, age, isMale, email, isSubscribed) {
+    this.firstName = name;
+    this.lastName = surname;
+    this.age = age;
+    this.isMale = isMale;
+    this.email = email;
+    this.isSubscribed = isSubscribed;
+  }
+  
+  const users = [];
+  
+  for (let i = 0; i < 10; i++) {
+    const user = new User(
+      `Username${i}`,
+      `Usersurname${i}`,
+      Math.floor(Math.random() * 90),
+      Math.random() < 0.5,
+      `useremail${i}@gmail.com`,
+      Math.random() < 0.5
+    );
+    users.push(user);
+  }
+
+console.table(users);
+
+//1
+const notSubscribedUsers = users.filter(u => !u.isSubscribed);
+console.table(notSubscribedUsers);
+
+//2
+const getfullName = users.map(f => `${f.firstName} ${f.lastName}`);
+console.table(getfullName);
+
+//3
+const schoolAgeFemaleUsers = users
+  .filter(s => !s.isMale && s.age >= 6 && s.age <= 18)
+  .map(s => `${s.firstName} ${s.lastName} ${s.age} ${s.isMale}`);
+console.log(schoolAgeFemaleUsers);
+
+//4
+const delGmail = users.filter(g => g.email !== "useremail5@gmail.com");
+console.table(delGmail);
