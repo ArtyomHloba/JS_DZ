@@ -3,57 +3,72 @@
 }
 
 body{
-    background-color: blueviolet;
+    background-color:darkslategray ;
+    font-family: 'Open Sans';
 
-}
-.container {
-    padding: 20px;
-}
-
-.phone-item {
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid grey;
-    border-radius: 5px;
 }
 
-.phone-0 {
-    background-color: #e9e9e9;
+.post-cont{
+    max-width: 250px;
+    min-width: 200px;
+    width: 100%;
+    
+    background-color: #ffff;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 5px;
 }
 
-.phone-1 {
-    background-color: #e9e9e9;
+.post-photo{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+
+    border-radius: inherit;
 }
 
-.phone-2 {
-    background-color: #e9e9e9;
+.post-name{
+    font-size: 20px;
+    font-weight: 500;
 }
 
-.phone-3 {
-    background-color: #e9e9e9;
+.autor{
+    font-size: 15px;
+    color: gray;
 }
 
-.phone-4 {
-    background-color: #e9e9e9;
+.post-text{
 }
 
-.phone-brand {
-    font-weight: bold;
+.post-date{
+    color: gray;
+    font-size: 10px;
 }
 
-.phone-model {
-    color: #555;
+.post-likes{
+    font-size: 15px;
 }
 
-.phone-color {
-    color: #888;
+.heart{
+    color: red;
+    font-size: 15px;
 }
 
-.phone-price {
-    color: green;
-    font-weight: bold;
+.share{
+    color: black;
+    font-size: 15px;
 }
 
-.phone-ram {
-    color: blue;
+.share:hover{
+    color: gray;
+}
+
+.post-heshtag{
+    color: gray;
+    font-size: 15px;
 }
