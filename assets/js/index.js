@@ -1,40 +1,34 @@
-// Обробка помилок
-
-function pow(base, exponent){
-    if(typeof base !== `number`){
-        throw new Error('Введіть коректне число')
+function counter(number) {
+    let count = 0;
+  
+    function inc() {
+      return count += number;
     }
-    if(typeof exponent !== 'number'){
-        throw new Error('Введіть коректну степень') 
+  
+    return inc;
+  }
+  
+  const count1 = counter(5);
+  console.log(count1());
+  console.log(count1());
+  console.log(count1());
+  console.log(count1());
+  
+  function counter(n, e) {
+    let count = n;
+  
+    function inc() {
+      return count += e;
     }
-
-    if(!Number.isInteger(exponent) || exponent > Number.MAX_SAFE_INTEGER){
-        throw new Error('Степень повинна бути більше за 0')
-    }
-
-    if(base === 0){
-        return 0;
-    }
-
-    if(exponent === 0 || base === 1){
-        return 1;
-    }
-
-    if(exponent < 0) {
-        return 1 / pow(base, exponent * -1)
-    }
-
-    return base * pow(base, exponent - 1);
-}
-
-try {
-    const pow1 = pow(2, 2);
-    console.log(pow1);
-} catch (error) {
-    console.log(error);
-}
-
-console.log(`Після обробки`)
+  
+    return inc;
+  }
+  
+  const count1 = counter(+prompt("Введіть початкове число"), +prompt("введіть крок лічильник"));
+  console.log(count1());
+  console.log(count1());
+  console.log(count1());
+  console.log(count1());
 
 
 
