@@ -5,70 +5,27 @@
 body{
     background-color:darkslategray ;
     font-family: 'Open Sans';
-
     padding: 10px;
 }
 
-.post-cont{
+.render-card{
     max-width: 250px;
     min-width: 200px;
     width: 100%;
-    
-    background-color: #ffff;
-    border-radius: 10px;
+    background-color: #FFFF;
+    box-shadow: 0 0 15px white;
+    border-radius: 5px;
 
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    padding-bottom: 5px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
 }
 
-.post-photo{
-    width: 250px;
-    height: 200px;
+.user-photo{
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    width: 100%;
-
-    border-radius: inherit;
-}
-
-.post-name{
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.autor{
-    font-size: 15px;
-    color: gray;
-}
-
-.post-text{
-}
-
-.post-date{
-    color: gray;
-    font-size: 10px;
-}
-
-.post-likes{
-    font-size: 15px;
-}
-
-.heart{
-    color: red;
-    font-size: 15px;
-}
-
-.share{
-    color: black;
-    font-size: 15px;
-}
-
-.share:hover{
-    color: gray;
-}
-
-.post-heshtag{
-    color: gray;
-    font-size: 15px;
+    border-radius: 50%;
 }
