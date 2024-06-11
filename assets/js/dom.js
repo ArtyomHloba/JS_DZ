@@ -20,35 +20,33 @@
 //   };
 
 
-  const user = {
-    firstName: 'Test',
-    lastName: 'Testovych',
-    profilePhoto: 'https://images.pexels.com/photos/4902634/pexels-photo-4902634.jpeg',
-    birthday: new Date('2000-05-16'),
-    nickname: 'super dev',
-    likesCount: 10,
-}
+//   const user = {
+//     firstName: 'Test',
+//     lastName: 'Testovych',
+//     profilePhoto: 'https://images.pexels.com/photos/4902634/pexels-photo-4902634.jpeg',
+//     birthday: new Date('2000-05-16'),
+//     nickname: 'super dev',
+//     likesCount: 10,
+// }
 
 
-document.querySelector('.bnt-render').addEventListener('click', () =>{
-  const article = document.querySelector('.render-card')
+// document.querySelector('.bnt-render').addEventListener('click', () =>{
+//   const article = document.querySelector('.render-card')
 
-  article.innerHTML = `
-    <img class="user-photo" src="${user.profilePhoto}" alt="Profile Photo">
-      <p>Ім'я: ${user.firstName}</p>
-      <p>Прізвище: ${user.lastName}</p>
-      <p>Нікнейм: ${user.nickname}</p>
-      <p>Дата народження: ${user.birthday.toLocaleDateString('uk-UA')}</p>
-      <p>Кількість лайків: ${user.likesCount} <span class="heart"><i class="fa-solid fa-heart"></i></span></p> 
-`;
+//   article.innerHTML = `
+//     <img class="user-photo" src="${user.profilePhoto}" alt="Profile Photo">
+//       <p>Ім'я: ${user.firstName}</p>
+//       <p>Прізвище: ${user.lastName}</p>
+//       <p>Нікнейм: ${user.nickname}</p>
+//       <p>Дата народження: ${user.birthday.toLocaleDateString('uk-UA')}</p>
+//       <p>Кількість лайків: ${user.likesCount} <span class="heart"><i class="fa-solid fa-heart"></i></span></p> 
+// `;
 
-  const heart = document.querySelector('.heart');
-  if(heart){
-  heart.addEventListener('click', () => {
-    heart.style.color = 'red';
-  });
-  };
-});
-
-
+//   const heart = document.querySelector('.heart');
+//   if(heart){
+//   heart.addEventListener('click', () => {
+//     heart.style.color = 'red';
+//   });
+//   };
+// });
 
