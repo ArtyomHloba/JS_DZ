@@ -2,30 +2,55 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color:darkslategray ;
-    font-family: 'Open Sans';
-    padding: 10px;
-}
-
-.render-card{
-    max-width: 250px;
-    min-width: 200px;
+.gameCard{
+    max-width: 1000px;
+    min-width: 700px;
     width: 100%;
-    background-color: #FFFF;
-    box-shadow: 0 0 15px white;
-    border-radius: 5px;
-
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 10px;
-    padding: 10px 10px;
+    align-items: center;
+    text-align: center;
+    background-color: #ffff;
+    box-shadow: 0 0 5px gray;
+    border-radius: 20px;
+    margin: 30px auto;
+    padding-bottom: 20px;
 }
 
-.user-photo{
-    width: 150px;
-    height: 150px;
+.gameImg{
+    border-radius: 10px;
+    width: 100%;
     object-fit: cover;
-    border-radius: 50%;
+}
+
+.titleNews{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.newstext{
+    font-size: 17px;
+    line-height: 25px;
+    padding: 0 20px 0 20px;
+}
+
+.category{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.date{
+    color: gray;
+}
+
+.del-btn{
+    border: none;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.likeNews{
+    padding-top: 5px;
+    font-size: 40px;
 }
