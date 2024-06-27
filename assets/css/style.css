@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.gameCard{
+/* .gameCard{
     max-width: 1000px;
     min-width: 700px;
     width: 100%;
@@ -48,9 +48,12 @@
     border: none;
     font-size: 20px;
     padding-top: 5px;
+    cursor: pointer;
 }
 
 .likeNews{
     padding-top: 5px;
     font-size: 40px;
-}
+    cursor: pointer;
+} */
+
