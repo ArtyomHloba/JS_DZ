@@ -11,10 +11,92 @@
     <script defer src="./assets/js/dom+verstka.js"></script>
     <script defer src="./assets/js/async.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <script defer src="./assets/js/regForm.js"></script>
+    <title></title>
 </head>
 <body>
-    <div id="root">
-    </div>
+    <main>
+        <h1 class="form-head">Contact Form</h1>
+        <p class="text-after-head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, adipisci asperiores?</p>
+
+        <form class="reg-form">
+            
+            <label class="form-label">
+                <span class="label-caption">Name:</span>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user-name"
+                  placeholder="Name"
+                  required
+                  autofocus
+                  tabindex="1"
+                />
+              </label>
+              
+              <label class="form-label">
+                <span class="label-caption">Surname:</span>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user-surname"
+                  tabindex="2"
+                  minlength="2"
+                  maxlength="65"
+                  pattern="[A-Z][a-z]{1,31}(-[A-Z][a-z]{1,31})?"
+                  placeholder="Surname"
+                />
+              </label> 
+  
+          <label class="form-label">
+            <span class="label-caption">Your email:</span>
+            <input
+              class="form-input"
+              type="email"
+              name="user-email"
+              placeholder="mail@mail.mail"
+              tabindex="3"
+              required
+            />
+          </label>
+
+          <label class="form-label">
+            <span class="label-caption">Phone:</span>
+            <input
+              class="form-input"
+              type="tel"
+              name="user-phone"
+              tabindex="4"
+              pattern="\+380-?\d{2}-?\d{3}-?\d{4}"
+              placeholder="+380-00-000-0000"
+            />
+          </label>
+  
+          <label class="form-label">
+            <span class="label-caption">Message subject:</span>
+            <select 
+            name="select-message-subject"
+            class="form-input"
+            tabindex="5"  
+            >
+                <option value="game-doom">Doom</option>
+                <option value="game-doom-eternal">Doom-Eternal</option>
+                <option value="game-doom-1993">Doom-1993</option>
+            </select>
+
+          </label>
+  
+          <label class="form-label">
+            <span class="label-caption">Message:</span>
+            <textarea 
+            class="form-input"
+            tabindex="6"
+            maxlength= "200"
+            >
+            </textarea>
+          </label>
+          <button class="submit-btn" type="submit">Register:</button>
+        </form>
+      </main>
 </body>
 </html>

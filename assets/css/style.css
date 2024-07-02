@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
 }
 
@@ -56,4 +56,96 @@
     font-size: 40px;
     cursor: pointer;
 }
+ */
 
+ * {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-family: sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/sea.jpg);
+    background-size: cover;
+  }
+  
+  main {
+    box-shadow: 0 0 20px black;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    min-width: 300px;
+    margin: 10px;
+  }
+  
+  .form-head {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffff;
+  }
+
+  .text-after-head{
+    color: #ffff;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .reg-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-label {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .label-caption {
+    flex: 1 1 120px;
+    color: #ffff;
+    font-size: 20px;
+  }
+  
+  .form-input {
+    flex: 1 1 200px;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+  }
+
+.form-input:valid {
+  border: 1px solid green;
+  background-color: aquamarine;
+}
+.form-input:invalid {
+  border: 1px solid red;
+  background-color: lightpink;
+}
+  
+  .submit-btn {
+    padding: 5px;
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .submit-btn:hover{
+    background-color: inherit;
+    color: white;
+  }
