@@ -124,6 +124,7 @@
     outline: none;
     border-radius: 10px;
     border: none;
+    width: 100%;
   }
 
 .form-input:valid {
